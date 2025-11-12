@@ -1,10 +1,9 @@
-build-run:
-	gcc database.c -o database -Wextra -Wall && ./database
+CC = gcc
+CFLAGS = -Wall -Werror -g
 
-build:
-	gcc database.c -o database -Wextra -Wall
+database:
+	$(CC) $(CFLAGS) database.c  utils.c -o database 
 
-run:
-	./database	
-
+clean:
+	rm database	
 
