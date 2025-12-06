@@ -14,7 +14,7 @@ int main(void) {
 				case (META_COMMAND_SUCCESS):
 					continue;
 				case (META_COMMAND_UNRECOGNIZED):
-					printf("Unrecognized command");
+					printf("Unrecognized command\n");
 					continue;
 			}
 		}
